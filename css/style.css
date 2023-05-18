@@ -1,0 +1,165 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --main-color: #016936;
+  --background-color:rgb(18, 18, 18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: white;
+  background: var(--background-color);
+}
+
+header {
+  text-align: center;
+}
+
+header p {
+  font-family: 'Lobster', 'Poppins', sans-serif;
+  font-size: 1.5em;
+}
+header p  i {
+  margin-right: 4px;
+}
+.countainer {
+  margin: 0px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+
+.countainer .search-countainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-countainer input[type='search'] {
+  width: 70%;
+  height: 2.5em;
+  flex-grow: 1;
+  padding: 0px 10px 0px 20px;
+  outline: none;
+  border: none;
+  border-radius: 20px 0px 0px 20px;
+}
+
+ .search-countainer button {
+  width: 25%;
+  background-color: var(--main-color);
+  border: none;
+  color: white;
+  border-radius: 0px 20px 20px 0px;
+  cursor: pointer;
+}
+
+.search-countainer .Message {
+  margin: 10px auto;
+  color: #FF0000;
+  font-size: 0.8rem;
+  visibility: hidden;
+}
+
+
+.countainer .result-countainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.result-countainer .poster {
+  width: 30%;
+  position: relative;
+  height: fit-content;
+}
+.result-countainer .poster  div {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.9em;
+  padding: 1px 4px;
+  border-bottom-left-radius: 10px;
+  background-color: var(--main-color);
+  color: rgb(251, 255, 0);
+}
+
+.result-countainer  .poster  div i {
+  margin-right: 4px;
+}
+.result-countainer .poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border: solid 3px var(--main-color);
+}
+
+.result-countainer .informations {
+  margin-left: 30px;
+  width: 60%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.informations .Title {
+  text-align: center;
+  margin: 10px 0px;
+  background-color: var(--main-color);
+}
+
+ .informations div {
+  margin: 0.3em 0px;
+}
+.informations div i {
+  margin-right: 5px;
+  color: var(--main-color);
+}
+
+.countainer .result-countainer .more-info {
+  margin-top: 15px;
+  flex-basis: 100%;
+}
+
+.countainer .result-countainer .more-info div {
+  margin-bottom: 10px;
+}
+h4 {
+  color: var(--main-color);
+}
+
+@media (max-width: 576px) {
+  .poster {
+    margin: 0px auto;
+  }
+  .result-countainer .informations {
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media (min-width: 576px) {
+  .countainer {
+    width: 567px;
+  }
+}
+
+@media (min-width: 768px) {
+  .countainer {
+    width: 700px;
+  }
+}
